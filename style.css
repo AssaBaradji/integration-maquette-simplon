@@ -1,0 +1,520 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); */
+:root{
+    --red:#ce0033;
+    --palepink:#efbcc8;
+    --white:#ffff;
+    --pink:#de5e7d;
+    --gris:#c0c0c0;
+    --yellow:#ffd700;
+    --iconesomo:rgb(242,192,204);
+    --enwhite:#fafafa;
+    --black:black;
+ }
+*{
+    /* font-family: "nunito sans"; */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+    height: 50px;
+    padding: 0 10%;
+}
+header img {
+    width: 100px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin: left 30px;
+    
+}
+a{
+    text-decoration: none;
+}
+li {
+    margin: 0 15px;
+    list-style: none;
+ }
+li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: #000;
+    position: relative;
+}
+li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #cf2e2e;
+    transition: 0.5s;
+}
+li a:hover::after {
+    width: 100%;
+}
+li a:hover{
+    color: #000;
+}
+.formulaire form [type=submit]{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+}
+#acceuil{
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+#acceuil h1{
+    text-align: center;
+    color: var(--red);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+#acceuil .contenair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+#acceuil .contenair .left{
+    background-color:var(--red);
+    width: 80%;
+    border-radius: 0 0 50px;
+    box-shadow: 0 10px var(--pink),0 20px var(--palepink);
+    margin-top: 60px;
+    
+}
+#acceuil .contenair .left p{
+color: var(--white);
+font-size: 30px;
+display: flex;
+justify-content: end;
+padding: 0 40px;
+}
+#acceuil .contenair .left .gras {
+    font-weight: bold;
+    
+    
+
+}
+#acceuil .contenair .right{
+    flex-direction: column;
+    width: 50%; 
+    background-color: var(--white);
+    margin-top: 80px;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    height: 30%;
+    margin-left: 250px;
+    border: 1px solid var(--red);
+    box-shadow: 15px 15px 50px rgba(0,0,0,0,0.1);
+    text-align: center;
+    align-content: center;
+
+}
+#acceuil .contenair .right .para p{
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    background-color: var(--white);
+    top: 40%;
+    left: 58%;
+    border: 1px solid var(--red);
+    padding: 40px;
+    border-radius: 10px;
+}
+#acceuil .contenair .right .ombre{
+    background-color: var(--red);
+    position: absolute;
+    width: 20%;
+    padding: 40px;
+    height: 40%;
+    transform: rotate(6deg);
+    top: 40%;
+    left: 55%;
+    border-radius: 10px;
+}
+#acceuil .contenair .right .vide1 {
+    position: absolute;
+    z-index: 1;
+    content: "“";
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+    right: 290px;
+    top: 270px;
+    height: 50px;
+    width: 50px;
+    line-height: inherit;
+    border-radius: 50%;
+    color: var(--palepink);
+}
+#acceuil .contenair .right .para{
+   width: 80%;
+
+}
+#pedagogie{
+    margin-top: 100px;
+}
+#pedagogie h1{
+    text-align: center;
+    color: var(--red);
+    margin-bottom: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 300px;
+}
+#pedagogie .contenair1{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#pedagogie .contenair1 .right1{
+    width: 40%;
+    font-size: 20px;
+    margin-top: -30px;
+   
+}
+#pedagogie .contenair1 .right1 h2{
+    /* text-align: center; */
+    color: var(--red);
+    margin-bottom: 40px;
+    font-size: 25px;
+    
+}
+#pedagogie-partie2 .contenair2{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    align-content: space-evenly;
+}
+#pedagogie-partie2 .contenair2 .left2{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3,200px);
+    gap: 50px;  
+}
+#pedagogie-partie2 h1{
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top:  100px;
+    margin-bottom: -50px;
+    margin-left: 110px;
+       
+}
+#pedagogie-partie2 .contenair2 .left2 .block{
+    width: 85%;
+    background-color: var(--white);
+    justify-content: center;
+    border-bottom: 5px  solid var(--red);
+    box-shadow: 0 0 5px;
+    padding: 20px;
+}
+#pedagogie-partie2 .contenair2 .left2 .block .block-para{
+    /* margin-bottom: -10px; */
+}
+#pedagogie-partie2 .contenair2 .left2 .block h3 {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}
+#pedagogie-partie2 .contenair2 .left2 .block .gras{
+    margin-top: -40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#pedagogie-partie2 .contenair2 .right2 img{
+   border-radius: 30px;  
+   height: 98%;
+   box-shadow: 15px -15px 0 0 var(--red);
+   width: 100%;
+   margin-top: 15px;
+
+}
+#valeurs h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--red);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#valeurs h3{
+    color: var(--red);
+    font-size: 30px;
+    margin-top: 50px;
+}
+#valeurs .contenaire3{
+    display: flex;
+    width: 90%;
+    
+}
+.droite3 h3 {
+    width: 25%;
+    font-size: 20px;
+    margin-top: -30px;
+   margin-left: 50px;
+}
+#valeurs .contenaire3 .gauche3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    
+}
+#valeurs .contenaire3 .droite3 p{
+    width: 48%;
+    font-size: 20px;
+    margin-top: -30px;
+    padding: 50px;
+
+}
+#valeurs .contenaire3 .droite3{
+    margin-top: -50px;
+    margin-left: 50px;
+    
+}
+#valeurs .contenaire3 .gauche3 .respect{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+#valeurs .contenaire3 .gauche3 .respect .number{
+    background-color: var(--palepink);
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    color: var(--red);
+    align-content: center;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 40px;
+}
+#valeurs .contenaire3 .gauche3 .respect h4 {
+    font-size : 25px;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+#valeurs .contenaire3 .gauche3 .respect .respect-para{
+    margin-left: 30px;
+    margin-top: -25px;
+    font-size: 15px;
+
+}
+#valeurs .contenaire3 .droite3 [type=submit]{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 20px;
+    width: 25%;
+    border-radius: 35px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#barre-rose{
+    margin-top: 200px;
+}
+#barre-rose h1{
+    text-align: center;
+    color: var(--red);
+    font-size: 30px;
+    font-weight: bold;
+}
+#barre-rose .barre-rose{
+    display: flex;
+    /* background-color: var(--red); */
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--white);
+    margin-top: 150px;
+    background-color: var(--red);
+    height: 10%;
+}
+#barre-rose .barre-rose .chiffres{
+    width: 50%;
+    text-align: center;
+    
+}
+#barre-rose .barre-rose .chiffres.print{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+#barre-rose .barre-rose .chiffres h5{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+}
+#barre-rose .barre-rose .chiffres h5,.print {
+    margin-bottom: 0;
+    width: 55%;
+    margin-left: 150px;
+}
+.barre-rose .parent {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+#registre h1 {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top:  100px;
+    text-align: center;
+}
+#registre .ligne{
+    text-align: center;
+    font-size: 25px;
+}
+#registre .equipe .coach{
+     width: 240px;
+    height: 330px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+}
+#registre .equipe {
+    display: flex;
+    justify-content: center;
+}
+#registre .equipe .coach img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: var(--red);
+    margin-top: 8px;
+}
+#registre .equipe .coach h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+#registre .equipe .coach h2{
+    color: var(--red);
+    
+}
+#registre .equipe .coach .formation{
+    color: #c0c0c0;
+}
+#registre .equipe .coach .logo-internet img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+#registre .trema{
+    display: flex;
+    justify-content: center;
+}
+#registre .trema div{
+    background-color: var(--red);
+    width: 1px;
+    height: 1px;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+#registre .trema .tiré{
+    width: 50px;
+}
+#recrutement{
+    margin-top: 100px;
+}
+#recrutement h1{
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom:  100px;
+    text-align: center;
+}
+#recrutement .sous-recrutement{
+    display: flex;
+    justify-content: space-evenly;
+}
+#recrutement .sous-recrutement .droite4 img{
+    width: 600px;
+    height: 250px;
+}
+#recrutement .sous-recrutement .gauche4 {
+    width: 40%;
+    font-size: 20px;
+    margin-top: -30px;
+    
+}
+#recrutement .sous-recrutement .gauche4 h2{
+    color: var(--red);
+}
+#recrutement .contact .title h3{
+    color: var(--red);
+    font-size: 30px;
+}
+.separation{
+    width: 40%;
+    height: 1px;
+    background-color: var(--red);
+}
+#recrutement .contact .partie-diote h2{
+    margin-bottom: -10px;
+}
+#recrutement .contact .partie-diote h4{
+    color: var(--red);
+    font-size: medium;
+    margin-bottom: -10px;
+}
+#recrutement .contact .contrat{
+    display: flex;
+}
+#recrutement .contact .contrat .partie-gauche{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+#recrutement .contact .contrat .partie-gauche img{
+    width: 80%;
+    height: 60%;
+}
+#recrutement .contact .contrat .partie-gauche .icon{
+    display: flex;
+    flex-direction: row;  
+}
+
+
+
+
+
+
+
