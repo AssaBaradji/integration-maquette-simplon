@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 :root{
     --red:#ce0033;
     --palepink:#efbcc8;
@@ -11,7 +11,7 @@
     --black:black;
  }
 *{
-    /* font-family: "nunito sans"; */
+    font-family: "nunito sans";
 }
 header {
     display: flex;
@@ -50,6 +50,10 @@ li a {
     text-decoration: 0;
     color: #000;
     position: relative;
+    font-weight: bold;
+}
+li .rouge{
+    color: var(--red);
 }
 li a::after {
     position: absolute;
@@ -68,18 +72,38 @@ li a:hover::after {
 li a:hover{
     color: #000;
 }
+div.search{
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+}
+div.search img{
+    width: 18px;
+    height: 18px;
+
+}
+.formulaire form{
+    display: flex;
+}
+.formulaire form #language-select{
+    border: none;
+    margin-right: 40px;
+   
+}
 .formulaire form [type=submit]{
     background-color: var(--red);
     color: var(--white);
     border: none;
     padding: 5px;
-    width: 40%;
+    width: 60%;
     border-radius: 10px;
+    margin-right: 20px;
 }
 #acceuil{
-    margin-top: 150px;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: -200px;
 }
 #acceuil h1{
     text-align: center;
@@ -92,15 +116,15 @@ li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-
+    align-content: center;
+    margin-bottom: -80px;
 }
 #acceuil .contenair .left{
     background-color:var(--red);
     width: 80%;
     border-radius: 0 0 50px;
     box-shadow: 0 10px var(--pink),0 20px var(--palepink);
-    margin-top: 60px;
+    margin-top: 150px;
     
 }
 #acceuil .contenair .left p{
@@ -125,7 +149,6 @@ padding: 0 40px;
     padding-bottom: 30px;
     height: 30%;
     margin-left: 250px;
-    border: 1px solid var(--red);
     box-shadow: 15px 15px 50px rgba(0,0,0,0,0.1);
     text-align: center;
     align-content: center;
@@ -157,10 +180,10 @@ padding: 0 40px;
     position: absolute;
     z-index: 1;
     content: "“";
-    font-size: 100px;
+    font-size: 110px;
     text-align: center;
     color: #fff;
-    right: 290px;
+    right: 470px;
     top: 270px;
     height: 50px;
     width: 50px;
@@ -170,7 +193,25 @@ padding: 0 40px;
 }
 #acceuil .contenair .right .para{
    width: 80%;
+   
 
+}
+#acceuil .trema{
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+}
+#acceuil .trema div{
+    background-color: var(--red);
+    width: 1px;
+    height: 1px;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+#acceuil .trema .tiré{
+    width: 50px;
 }
 #pedagogie{
     margin-top: 100px;
@@ -195,7 +236,6 @@ padding: 0 40px;
    
 }
 #pedagogie .contenair1 .right1 h2{
-    /* text-align: center; */
     color: var(--red);
     margin-bottom: 40px;
     font-size: 25px;
@@ -231,9 +271,6 @@ padding: 0 40px;
     box-shadow: 0 0 5px;
     padding: 20px;
 }
-#pedagogie-partie2 .contenair2 .left2 .block .block-para{
-    /* margin-bottom: -10px; */
-}
 #pedagogie-partie2 .contenair2 .left2 .block h3 {
     color: var(--red);
     font-weight: bold;
@@ -252,6 +289,9 @@ padding: 0 40px;
    width: 100%;
    margin-top: 15px;
 
+}
+#valeurs{
+    margin-bottom: -100px;
 }
 #valeurs h1{
     font-size: 30px;
@@ -349,7 +389,6 @@ padding: 0 40px;
 }
 #barre-rose .barre-rose{
     display: flex;
-    /* background-color: var(--red); */
     flex-direction: row;
     justify-content: space-evenly;
     color: var(--white);
@@ -476,42 +515,301 @@ padding: 0 40px;
 #recrutement .sous-recrutement .gauche4 h2{
     color: var(--red);
 }
-#recrutement .contact .title h3{
+#formulaire{
+    display: flex;
+    justify-content: space-evenly;
+}
+#formulaire .contact .droite5 h2{
     color: var(--red);
     font-size: 30px;
 }
 .separation{
-    width: 40%;
+    width: 85%;
     height: 1px;
     background-color: var(--red);
+    margin-top: 50px;
 }
-#recrutement .contact .partie-diote h2{
-    margin-bottom: -10px;
+.formateur-statut{
+    display: flex;
 }
-#recrutement .contact .partie-diote h4{
+.formateur-statut .sous-droite h4{
     color: var(--red);
-    font-size: medium;
     margin-bottom: -10px;
+    
 }
-#recrutement .contact .contrat{
-    display: flex;
+.formateur-statut .sous-droite p{
+    font-size: 18px;
+    margin-top: 15px;
 }
-#recrutement .contact .contrat .partie-gauche{
-    display: flex;
-    flex-direction: column;
-    margin-left: 60px;
-    margin-top: 30px;
+.formateur-statut .contrat{
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-#recrutement .contact .contrat .partie-gauche img{
-    width: 80%;
-    height: 60%;
-}
-#recrutement .contact .contrat .partie-gauche .icon{
+    margin-top: 30px;
+    border-radius: 15px;
+    padding-right: 40px;
+    padding-left: 20px;
+    margin-left: 80px;
+    height: -20px;
+    background-color: var(--enwhite);
+}   
+.formateur-statut .contrat .icon{
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-left: 20px;
+
+   
+
+}
+.formateur-statut .contrat .icon img {
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+    
+}
+.formateur-statut .contrat .icon .icon-p {
+    font-size: 13px;
+    margin-left: 20px;
+    margin-bottom: -40px;
+}
+.contact .droite5{
+    width: 80%;
+    margin-right: 80px;
+    background-color: var(--palepink);
+    border-radius: 30px;
+    margin-top: 40px;
+}
+.contact .droite5 [type=submit]{
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 30px;
+    padding: 10px;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.contact .droite5 .formateur {
+    display: flex;
+    margin-bottom: -30px;
+}
+#formulaire .contact .droite5 .formateur .formateur-title{
+    font-size: 20px;
+    color: var(--black);
+}
+.contact .droite5 .formateur i{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left:280px;
+}
+.contact .droite5 .affiche i{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    
+}
+.contact .droite5 .affiche{
+    display: flex;
+    margin-left: 390px;
+}
+.contact .droite5 .affiche img{
+    font-weight: bold;
+    height: 20px;
+    width: 30px;
+    margin-top: 15px;
 }
 
+form .checkbox label{
+    font-weight: bold;
+}
+
+form .checkbox [type=chexbox] 
+{
+    width: 20%;
+    height: 1px;
+    margin: 15px;
+}
+
+#formulaire .contact form .corps-form{
+    display: flex;
+}
+.gauche5{
+    margin-top: 100px;
+    width: 80%;
+}
+#formulaire .contact .gauche5 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+#formulaire .contact .gauche5 form .groupe{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 50%;
+}
+.corps-formulaire .droite{
+    display: flex;
+}
+.corps-formulaire .gauche{
+    display: flex;
+}
+#formulaire .contact form .pied-formulaire{
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    margin: 15px;  
+}
+form .checkbox{
+    margin: 15px;   
+}
+#formulaire .contact .gauche5 input[type="text"],
+#formulaire .contact .gauche5 input[type="number"]{
+    padding: 15px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px var(--gris);
+}
+#formulaire .contact .gauche5 textarea{
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+#formulaire .contact .gauche5 input[type=submit]{
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+}
+.gauche5 .piece-jointe{
+    color: var(--red);
+    margin-left: 400px;
+    font-weight: bold;
+    width: 60%;
+}
+.btn [type=submit] {
+    background-color: var(--red);
+    width: 25%;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--white);
+    border: none;
+    margin-left: 30px;
+}
+.file{
+    color: var(--gris);
+}
+.partenair img{
+    width: 130px;
+    height: 100px;
+    margin: 30px;
+
+}
+.partenair {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 50px;
+}  
+.partenair .ligne {
+    margin: 50px;
+} 
+.partenair h1{
+    font-size: 30px;
+    color: var(--red);
+    font-weight: bold;
+    text-align: center;
+}  
+#partenariat .trema{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#partenariat .trema div{
+    background-color: var(--red);
+    width: 1px;
+    height: 1px;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+#partenariat .trema .tiré{
+    width: 50px;
+}
+#formulaire .contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+#dernier-section{
+    background-color: var(--black);
+}
+#dernier-section .font-noir{
+    display: flex;
+}
+#dernier-section .font-noir .réseau{
+    margin: 80px;
+    color: var(--white);
+}
+#dernier-section .font-noir .réseau .sl img{
+    width: 100px;
+    color: #ffffff;
+    filter: invert(100%);
+    filter: brightness(200);
+
+}
+#dernier-section .font-noir .réseau .internet img{
+    width: 20px;    
+}
+#dernier-section .font-noir .réseau input[type=text]{
+    padding: 13px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    color: var(--gris);
+    font-size: 13px;
+
+}
+#dernier-section .font-noir .réseau .insertion{
+    background-color: var(--red);
+    border: none;
+    padding: 13px;
+    margin-right: 20px;
+    border-radius: 0 10px 10px  0;
+    color: var(--enwhite);
+    font-size: 13px;
+
+}
+footer{
+    display: flex;
+    text-align: center;
+    background-color: var(--red);
+    justify-content: space-between;
+    color: #ffffff 
+}
+footer .footer{
+    font-size: 20px;
+}
+footer .right-footer{
+    font-size: medium;
+}
+footer .gra{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+footer i{
+    color: #000;
+}
 
 
 

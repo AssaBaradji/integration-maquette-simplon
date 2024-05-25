@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
 </head>
 <body>
         <header class="header">
             <img src="images/Logo.png" alt="logo simplon">
             <nav class="nav">
                 <li><a href="index.html">Acceuil</a></li>
-                <li><a href="#pedagogie">Fabrique</a></li>
+                <li><a class="rouge" href="#pedagogie">Fabrique</a></li>
                 <li><a href="#pedagogie-partie2">Formations</a></li>
                 <li><a href="#valeurs">Partenariats</a></li>
                 <li><a href="#registre">Espaces</a></li>
                 <li><a href="#recrutement">Entités</a></li>
-                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><div class="search"><img src="images/loup seach.png" alt="Recherc he"></div></a></li>
             </nav>
             <div class="formulaire">
                 <form>
                     <select id="language-select" name="language">
-                        <option value="fr">Français</option>
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                        <option value="de">Deutsch</option>
-                        <option value="it">Italiano</option>
+                        <option value="fr">Fr</option>
+                        <option value="en">En</option>
+                        <option value="es">Es</option>
                     </select>
                     <button type="submit">Contact</button>
                 </form>
@@ -55,6 +56,11 @@
                         <div class="vide2">“</div>
                 </div>
 
+            </div>
+            <div class="trema">
+                <div></div>
+                <div></div>
+                <div class="tiré"></div>
             </div>
         </section>
         <section id="pedagogie">
@@ -225,7 +231,7 @@
                             amet risus morbi leo.</p>
                         <div class="logo-internet">
                             <img src="images/twitter.jpg" alt="logo-twitter">
-                            <img src="images/fac.jpg" alt="logo-facebook">
+                            <img src="images/fac.png" alt="logo-facebook">
                             <img src="images/link.jpg" alt="logo-linkdin">
                         </div>    
                     </div>
@@ -237,7 +243,7 @@
                             amet risus morbi leo.</p>
                         <div class="logo-internet">
                             <img src="images/twitter.jpg" alt="logo-twitter">
-                            <img src="images/fac.jpg" alt="logo-facebook">
+                            <img src="images/fac.png" alt="logo-facebook">
                             <img src="images/link.jpg" alt="logo-linkdin">
                         </div>    
                     </div>
@@ -249,8 +255,8 @@
                             amet risus morbi leo.</p>
                         <div class="logo-internet">
                             <img src="images/twitter.jpg" alt="logo-twitter">
-                            <img src="images/fac.jpg" alt="logo-facebook">
-                            <img src="images/link.jpg" alt="logo-linkdin">
+                            <img src="images/fac.png" alt="logo-facebook">
+                            <img class="carré" src="images/link.jpg" alt="logo-linkdin">
                         </div>    
                     </div>
 
@@ -262,8 +268,8 @@
                 </div>
         </section>
         <section id="recrutement">
-            <h1>Recrutement</h1>
-                <div class="sous-recrutement">
+                 <h1>Recrutement</h1>
+            <div class="sous-recrutement">
                     <div class="droite4">
                         <img src="images/groupe.jpg" alt="groupe simplon">
                     </div>
@@ -278,64 +284,179 @@
                             eaque, enim laudantium corrupti iure quisquam a amet reprehenderit
                             atque fugiat?Inventore non totam ea, optio voluptates eveniet in sequi qu</p>
                     </div>
-                </div>
+            </div>
+        </section>
+        <section id="formulaire">
                 <div class="contact">
-                    <div class="title">
-                        <h3>Offres en cours</h3>
-                    </div>
-                    <div class="separation"></div>
-                    <div class="contrat">
-                        <div class="partie-diote">
-                            <h2>Formateur référent</h2>
-                            <h4>Résumé du poste</h4>
-                            <p class="contra-para">Unde temporibus <br>
+                    <div class="droite5">
+                        <h2>Offres en cours</h2>
+                        <div class="separation"></div>
+                        <div class="formateur-statut">
+                            <div class="sous-droite">
+                                <h3>Formateur référent</h3>
+                                <h4>Résumé du poste</h4>
+                                <p>Unde temporibus <br>
 
-                                amet est! Perferendis <br>
-                                
-                                sapienteanimisperiores <br>
-                                
-                                dicta maxime doloremque, <br>
-                                
-                                ue pienteautofficia</p>
-                        </div>
-                        <div class="partie-gauche">
-                            <div class="icon">
-                                <div>
-                                    <img src="images/calendar.png"/>
-                                </div>
-                                <div>
-                                    <p class="icon-para">CDD</p>
-                                </div>     
+                                    amet est! Perferendis <br>
+                                    
+                                    sapienteanimisperiores <br>
+                                    
+                                    dicta maxime doloremque,<br>
+                                    
+                                    ue pienteautofficia</p>
                             </div>
-                            <div class="icon">
-                                <div>
-                                    <img src="images/calendar.png"/>
+                            <div class="contrat">
+                                <div class="icon">
+                                <img src="images/collections_book.png" alt="icon de contrat">
+                                <p class="icon-p">CDD</p>
                                 </div>
-                                <div>
-                                    <p class="icon-para">Plein temps</p>
-                                </div>     
+                                <div class="icon">
+                                <img src="images/calendar.png" alt="icon calendrier">
+                                <p class="icon-p">Plein temps</p>
+                                </div>
+                                <div class="icon">
+                                    <img src="images/location.png" alt="icon de localisation">
+                                    <p class="icon-p">Dakar</p>
+                                </div>
+                                <div class="icon">
+                                    <img src="images/schedule.png" alt="icon de temps">
+                                    <p class="icon-p">XX/XY/ZZ</p>
+                                </div>
+                            </div>  
+                        </div>  
+                        <div class="Postuler">
+                            <button type="submit">Postuler</button>
+                                 <div class="separation"></div>
+                                <div class="formateur">
+                                    <h2 class="formateur-title">Formateur référent </h2>
+                                    <i class='bx bxs-plus-circle' style='color:#ce0033'></i>
+                                    
+                                </div>
+                                <div class="separation"></div>
+                                <div class="formateur">
+                                    <h2 class="formateur-title">Formateur référent </h2>
+                                    <i class='bx bxs-plus-circle' style='color:#ce0033' width="50" height="50"></i>
+                                </div>
+                                <div class="separation"></div>
+                                <div class="affiche">
+                                    <p class="afficher">afficher</p>
+                                    <i class='bx bx-right-arrow-alt'></i>
+                                </div>
+                            
+                        </div>    
+                    </div>
+                
+                    <div class="gauche5">
+                        <form action="#">
+                            <div class="corps-formulaire">
+                                    <div class="droite">
+                                        <div class="groupe">
+                                            
+                                            <input type="text" name="username" id="username" placeholder="* Prenom">
+                                        </div>
+                                        <div class="groupe">
+                                            <input type="number" name="Phone" id="Phone" placeholder="* tel">
+                                        </div>
+                                    </div>
+                                <div class="gauche">
+                                    <div class="groupe">
+                                        <input type="text" name="username" id="name" placeholder="Nom">
+                                    </div>
+                                    <div class="groupe">
+                                        <input type="text" name="usermail" id="mail" placeholder="Mail">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="piece-jointe">
+                                <img src="images/join-files.png" alt="Joindre un fichier">joindre un ficher
+                              </div>
+                            <div class="pied-formulaire">
+                               
+                                <textarea name="Message" id="Message" >Message</textarea>
                             </div> 
-                            <div class="icon">
-                                <div>
-                                    <img src="images/location.png"/>
-                                </div>
-                                <div>
-                                    <p class="icon-para">Dakar</p>
-                                </div>     
+                            <div class="checkbox">  
+                                <label for="checkbox"><input type="checkbox"><type="checkbox">agree to terms et policy</label>                        
                             </div>
-                            <div class="icon">
-                                <div class="img">
-                                    <img src="images/schedule.png"/>
-                                </div>
-                                <div>
-                                    <p class="icon-para">XX/XY/ZZ</p>
-                                </div>     
+                            <div class="btn">
+                                <button type="submit">Rejoindre</button>
                             </div>
-                        </div>
+                            <p class="file">* These fields are required </p>
+                        </form>
                     </div>
+                </div>
+            </section>
 
+             <section id="partenariat">
+                <div class="partenair">
+                    <h1>Nos Partenaires</h1>
+                    <div class="ligne">
+                        <img src="images/FFI -img.jpg" alt="partenaire">
+                        <img src="images/F-S img.png" alt="partenaire">
+                        <img src="images/orange-img.png" alt="partenaire">
+                        <img src="images/AVIVA-img.png" alt="partenaire">
+                        <img src="images/UE-img.jpg" alt="partenaire">
+                    </div>
+                    <div class="ligne">
+                        <img src="images/FFI -img.jpg" alt="partenaire">
+                        <img src="images/F-S img.png" alt="partenaire">
+                        <img src="images/orange-img.png" alt="partenaire">
+                        <img src="images/AVIVA-img.png" alt="partenaire">
+                        <img src="images/UE-img.jpg" alt="partenaire">
+                    </div>
+                </div>
+                <div class="trema">
+                    <div></div>
+                    <div></div>
+                    <div class="tiré"></div>
                 </div>
         </section>
+            <section id="dernier-section">
+                <div class="font-noir">
+                    <div class="réseau">
+                        <div class="sl">
+                            <img src="images/Logo.png" alt="logo simplon">
+                        </div>  
+                        <div class="internet">
+                            <img src="images/logo-twitter.png" alt="logo twitter">
+                            <img src="images/fac.png" alt="logo facebook">
+                            <img src="images/instagram-IMG.png" alt="logo youtube">
+                            <img src="images/youtube-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="réseau">
+                        <h2>Voir plus</h2>
+                        <p>A propos</p> 
+                        <p>Notre histoire </p>
+                        <p> Condition d’utilisation</p>   
+                        <p>Politique de confidentialité</p>   
+                        <p>FAQ</p>     
+
+                    </div>
+                    <div class="réseau">
+                        <h2>Coordonnées</h2>
+                        <p>Cité keur Goor Gi</p>
+                        <p>Dakar, Sicap, Libeté 2 Senegal </p>
+                        <p>simplon@email.com</p>   
+                        <p>help@simplon.com</p>    
+                        <p> (221) 77 456 78 90   </p>
+                        <p> (221) 77 654 32 10</p>  
+                    </div>
+                    <div class="réseau">
+                        <h2>Notre Newsletter</h2>
+                        <p>Souscrivez-vous à notre</p>
+                        <p> newsletter pour ne manquer </p>
+                        <p> aucune de nos activités</p>
+                            <input type="text" name="mail" placeholder="Email"><button class="insertion">Joindre</button>
+                    </div>
+                </div>
+        </section>
+       
+        <footer>
+            <p class="footer">© 2021 Simplon. All rights reserved.</p>
+            <P class="right-footer">Made with <i class='bx bxs-heart' undefined ></i> <span class="gra">by SimplonP4</span></P>
+            
+        </footer>
 
 </body>
 </html>
