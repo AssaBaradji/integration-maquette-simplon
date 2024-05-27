@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 :root{
     --red:#ce0033;
     --palepink:#efbcc8;
@@ -10,9 +9,6 @@
     --enwhite:#fafafa;
     --black:black;
  }
-*{
-    font-family: "nunito sans";
-}
 header {
     display: flex;
     align-items: center;
@@ -100,6 +96,7 @@ div.search img{
     margin-right: 20px;
 }
 #acceuil{
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -176,20 +173,52 @@ padding: 0 40px;
     left: 55%;
     border-radius: 10px;
 }
-#acceuil .contenair .right .vide1 {
+#acceuil .contenair .right .vide1 #bx{
     position: absolute;
     z-index: 1;
-    content: "“";
-    font-size: 110px;
+    content: "";
     text-align: center;
-    color: #fff;
-    right: 470px;
-    top: 270px;
-    height: 50px;
-    width: 50px;
-    line-height: inherit;
-    border-radius: 50%;
+    right: 580px;
+    top: 350px;
+    height: 30px;
+    width: 30px;
     color: var(--palepink);
+}
+#acceuil .contenair .right .vide1 #bz{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    text-align: center;
+    right: 580px;
+    top: 350px;
+    height: 60px;
+    width: 60px;
+    color: var(--palepink);
+}
+#acceuil .contenair .right .vide2 #bz{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    right: 260px;
+    top: 530px;
+    height: 100px;
+    width: 100px;
+    color: var(--gris);
+    margin-top: 130px;
+}
+#acceuil .contenair .right .vide2 #bx{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    right: 275px;
+    top: 530px;
+    height: 50%;
+    width: 100px;
+    color: var(--gris);
+    margin-top: 130px;
+}
+#acceuil .contenair .right .vide2 i{
+    width: 50px;
 }
 #acceuil .contenair .right .para{
    width: 80%;
@@ -589,6 +618,7 @@ padding: 0 40px;
     width: 25%;
     margin-top: 20px;
     margin-left: 90px;
+    cursor: pointer;
 }
 .contact .droite5 .formateur {
     display: flex;
@@ -640,10 +670,12 @@ form .checkbox [type=chexbox]
     width: 80%;
 }
 #formulaire .contact .gauche5 {
-    display: flex;
-    width: 50%;
+    display: block;
+    width: 800px;
     justify-content: center;
     align-items: center;
+    height: 620px;
+    /* background-color: red; */
 }
 #formulaire .contact .gauche5 form .groupe{
     display: flex;
@@ -658,18 +690,18 @@ form .checkbox [type=chexbox]
     display: flex;
 }
 #formulaire .contact form .pied-formulaire{
-    display: flex;
-    flex-direction: column;
+    margin-top: 100px;
+    display: block;
     width: 91%;
-    margin: 15px;  
+     
 }
 form .checkbox{
     margin: 15px;   
 }
 #formulaire .contact .gauche5 input[type="text"],
 #formulaire .contact .gauche5 input[type="number"]{
-    padding: 15px;
-    width: 90%;
+    height: 35px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 0 2px var(--gris);
 }
@@ -678,6 +710,7 @@ form .checkbox{
     width: 100%;
     height: 80px;
     border-radius: 10px;
+    margin: 10px;
 }
 #formulaire .contact .gauche5 input[type=submit]{
     width: 100%;
@@ -689,10 +722,13 @@ form .checkbox{
     cursor: pointer;
 }
 .gauche5 .piece-jointe{
+    margin-top: 100px;
     color: var(--red);
-    margin-left: 400px;
-    font-weight: bold;
-    width: 60%;
+    cursor: pointer;
+    justify-content: left;
+    display: flex;
+    margin-left: 380px;
+
 }
 .btn [type=submit] {
     background-color: var(--red);
@@ -702,9 +738,11 @@ form .checkbox{
     color: var(--white);
     border: none;
     margin-left: 30px;
+    cursor: pointer;
 }
 .file{
     color: var(--gris);
+    margin: 10px;
 }
 .partenair img{
     width: 130px;
