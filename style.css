@@ -96,7 +96,6 @@ div.search img{
     margin-right: 20px;
 }
 #acceuil{
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -114,15 +113,13 @@ div.search img{
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-bottom: -80px;
+    height: 400px;
 }
 #acceuil .contenair .left{
     background-color:var(--red);
-    width: 80%;
+    width: 50%;
     border-radius: 0 0 50px;
     box-shadow: 0 10px var(--pink),0 20px var(--palepink);
-    margin-top: 150px;
-    
 }
 #acceuil .contenair .left p{
 color: var(--white);
@@ -133,102 +130,70 @@ padding: 0 40px;
 }
 #acceuil .contenair .left .gras {
     font-weight: bold;
-    
-    
-
+}
+#acceuil .contenair .contenair-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#acceuil .contenair .contenair-content .left{
+    width: 80%;
 }
 #acceuil .contenair .right{
+    display: flex;
     flex-direction: column;
     width: 50%; 
     background-color: var(--white);
-    margin-top: 80px;
     border-radius: 15px;
     padding-bottom: 30px;
-    height: 30%;
-    margin-left: 250px;
     box-shadow: 15px 15px 50px rgba(0,0,0,0,0.1);
     text-align: center;
-    align-content: center;
-
-}
-#acceuil .contenair .right .para p{
-    position: absolute;
-    width: 20%;
-    height: 40%;
-    background-color: var(--white);
-    top: 40%;
-    left: 58%;
-    border: 1px solid var(--red);
-    padding: 40px;
-    border-radius: 10px;
+    align-items: center;
+    position: relative;
 }
 #acceuil .contenair .right .ombre{
+    position: absolute;
+    width: 60%;
+    height: 250px;
     background-color: var(--red);
-    position: absolute;
-    width: 20%;
-    padding: 40px;
-    height: 40%;
-    transform: rotate(6deg);
-    top: 40%;
-    left: 55%;
-    border-radius: 10px;
-}
-#acceuil .contenair .right .vide1 #bx{
-    position: absolute;
-    z-index: 1;
-    content: "";
-    text-align: center;
-    right: 580px;
-    top: 350px;
-    height: 30px;
-    width: 30px;
-    color: var(--palepink);
-}
-#acceuil .contenair .right .vide1 #bz{
-    position: absolute;
-    z-index: 1;
-    content: "";
-    text-align: center;
-    right: 580px;
-    top: 350px;
-    height: 60px;
-    width: 60px;
-    color: var(--palepink);
-}
-#acceuil .contenair .right .vide2 #bz{
-    position: absolute;
-    z-index: 1;
-    content: "";
-    right: 260px;
-    top: 530px;
-    height: 100px;
-    width: 100px;
-    color: var(--gris);
-    margin-top: 130px;
-}
-#acceuil .contenair .right .vide2 #bx{
-    position: absolute;
-    z-index: 1;
-    content: "";
-    right: 275px;
-    top: 530px;
-    height: 50%;
-    width: 100px;
-    color: var(--gris);
-    margin-top: 130px;
-}
-#acceuil .contenair .right .vide2 i{
-    width: 50px;
+    top: -100px;
+    transform: rotate(5deg);
+    -webkit-transform-origin: 100% 100%;
+    border-radius: 15px;
 }
 #acceuil .contenair .right .para{
-   width: 80%;
-   
-
+    position: absolute;
+    width: 60%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--enwhite);
+    top: -100px;
+    right: 95px;
+    border-radius: 15px;
 }
+#acceuil .contenair .right .para .quote1{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+#acceuil .contenair .right .para .quote2{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+#acceuil .contenair .right .para i{
+   font-size: 50px;
+}
+
 #acceuil .trema{
     display: flex;
     justify-content: center;
-    margin-top: 500px;
 }
 #acceuil .trema div{
     background-color: var(--red);
@@ -351,10 +316,19 @@ padding: 0 40px;
     flex-direction: column;
     width: 100%;
     height: 0;
-    
+    position: relative;
+}
+#valeurs .contenaire3 .gauche3 i{
+    position: absolute; 
+    /* z-index: 2px;  */
+    top: 150px;
+    left: -100px;
+    /* width: 10px; */
+    font-size: 100px;
+    height: 50px;
 }
 #valeurs .contenaire3 .droite3 p{
-    width: 48%;
+    width: 60%;
     font-size: 20px;
     margin-top: -30px;
     padding: 50px;
@@ -551,12 +525,13 @@ padding: 0 40px;
 #formulaire .contact .droite5 h2{
     color: var(--red);
     font-size: 30px;
+    margin-bottom: 0;
 }
 .separation{
     width: 85%;
     height: 1px;
     background-color: var(--red);
-    margin-top: 50px;
+    margin: 18px;
 }
 .formateur-statut{
     display: flex;
@@ -602,12 +577,14 @@ padding: 0 40px;
     margin-left: 20px;
     margin-bottom: -40px;
 }
+.contact {
+    width: 90%;
+}
 .contact .droite5{
-    width: 80%;
-    margin-right: 80px;
+    width: 50%;
+    padding: 20px;
     background-color: var(--palepink);
     border-radius: 30px;
-    margin-top: 40px;
 }
 .contact .droite5 [type=submit]{
     border: none;
@@ -627,12 +604,17 @@ padding: 0 40px;
 #formulaire .contact .droite5 .formateur .formateur-title{
     font-size: 20px;
     color: var(--black);
+    margin-bottom: 5px;
+}
+.contact .droite5 .formateur div{
+    display: flex;
+    justify-content: end;
+    width: 50%;
 }
 .contact .droite5 .formateur i{
     width: 30px;
     height: 30px;
     margin-top: 20px;
-    margin-left:280px;
 }
 .contact .droite5 .affiche i{
     width: 30px;
@@ -666,16 +648,16 @@ form .checkbox [type=chexbox]
     display: flex;
 }
 .gauche5{
-    margin-top: 100px;
     width: 80%;
+    padding: 0 20px;
 }
 #formulaire .contact .gauche5 {
     display: block;
-    width: 800px;
+    width: 50%;
     justify-content: center;
     align-items: center;
     height: 620px;
-    /* background-color: red; */
+    
 }
 #formulaire .contact .gauche5 form .groupe{
     display: flex;
@@ -690,13 +672,13 @@ form .checkbox [type=chexbox]
     display: flex;
 }
 #formulaire .contact form .pied-formulaire{
-    margin-top: 100px;
     display: block;
-    width: 91%;
+    width: 90%;
+    height: 150px;
      
 }
 form .checkbox{
-    margin: 15px;   
+    margin: 20px;   
 }
 #formulaire .contact .gauche5 input[type="text"],
 #formulaire .contact .gauche5 input[type="number"]{
@@ -708,7 +690,7 @@ form .checkbox{
 #formulaire .contact .gauche5 textarea{
     padding: 15px;
     width: 100%;
-    height: 80px;
+    height: 100px;
     border-radius: 10px;
     margin: 10px;
 }
@@ -722,13 +704,11 @@ form .checkbox{
     cursor: pointer;
 }
 .gauche5 .piece-jointe{
-    margin-top: 100px;
+    margin: 20px 0;
     color: var(--red);
     cursor: pointer;
-    justify-content: left;
     display: flex;
-    margin-left: 380px;
-
+    justify-content: end;
 }
 .btn [type=submit] {
     background-color: var(--red);
@@ -737,7 +717,7 @@ form .checkbox{
     border-radius: 30px;
     color: var(--white);
     border: none;
-    margin-left: 30px;
+    margin: 30px;
     cursor: pointer;
 }
 .file{
@@ -798,13 +778,15 @@ form .checkbox{
 #dernier-section .font-noir .réseau{
     margin: 80px;
     color: var(--white);
+    
 }
 #dernier-section .font-noir .réseau .sl img{
     width: 100px;
     color: #ffffff;
-    filter: invert(100%);
-    filter: brightness(200);
-
+    filter:brightness(0) invert(100%);
+}
+#dernier-section .font-noir .réseau .sl{
+    margin-top: 20px;
 }
 #dernier-section .font-noir .réseau .internet img{
     width: 20px;    
@@ -826,6 +808,10 @@ form .checkbox{
     color: var(--enwhite);
     font-size: 13px;
 
+}
+#dernier-section .font-noir .réseau .btn-footer{
+    display: flex;
+    width: 30%;
 }
 footer{
     display: flex;
